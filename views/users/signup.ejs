@@ -1,0 +1,25 @@
+<% layout('/layouts/boilerplate') -%>
+<body>
+    <p>signup</p>
+    <form method="post" action="/signup">
+        <div>
+            <label for="username">Username:</label><br>
+            <input placeholder="Enter username" type="text" name="username" required/>
+        </div>
+        <div>
+            <label for="email">Email:</label><br>
+            <input placeholder="Enter email" type="text" name="email" required/>
+        </div>
+        <div>
+            <label for="password">Password:</label><br>
+            <input placeholder="Enter password" type="password" name="password" required/>
+        </div>
+        <div>
+            <input type="radio" name="user_type" value="login user" required>
+            <label for="html">Login User</label><br>
+            <input type="radio" name="user_type" value="Admin">
+            <label for="css">Admin</label><br>
+        </div>
+        <button>Submit</button>
+    </form>
+</body>
